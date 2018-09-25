@@ -1,4 +1,4 @@
-### list selected properties in a txt file
+### list selected properties and write to a txt file
 
 ```tcl
 *clearmark property 1
