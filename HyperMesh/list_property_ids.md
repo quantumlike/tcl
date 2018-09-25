@@ -1,3 +1,4 @@
+### list selected properties in a txt file
 
 ```tcl
 *clearmark property 1
