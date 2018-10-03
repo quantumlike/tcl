@@ -12,8 +12,6 @@ set d ${a}_${b}_${c}.txt
 ```tcl
 % set a to
 to
-% set a to
-to
 % set b do
 do
 % set c list
