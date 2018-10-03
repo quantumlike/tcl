@@ -6,6 +6,8 @@ set list2 {1 2 3}
 set list3 [list {*}$list1 {*}$list2]
 set union [lsort -unique [list {*}$list1 {*}$list2]]
 set list5 [concat $list1 $list2]
+  
+set e [list a b c]
 ```
 
 ```tcl
@@ -19,4 +21,6 @@ a b c 1 2 3
 1 2 3 a b c 
 % set list5 [concat $list1 $list2]
 a b c 1 2 3
+% set e [list a b c]
+a b c
 ```
