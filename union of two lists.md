@@ -6,9 +6,9 @@ set second {1 2 3}
 set third [list {*}$first {*}$second]
 ```
 
-% set first {a b c}
-a b c
-% set second {1 2 3}
-1 2 3
-% set third [list {*}$first {*}$second]
-a b c 1 2 3
+% set first {a b c}  
+a b c  
+% set second {1 2 3}  
+1 2 3  
+% set third [list {*}$first {*}$second]  
+a b c 1 2 3  
