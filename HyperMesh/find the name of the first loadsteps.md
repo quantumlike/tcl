@@ -1,4 +1,4 @@
-### Find  the name of the first loadsteps in HM
+### Find  the name of the first loadsteps in HM v2017
 
 ```tcl
 *createmark loadsteps 1 "all"
