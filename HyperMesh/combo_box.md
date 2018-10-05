@@ -59,17 +59,17 @@ proc ::test_aaa::mainGUI {args} {
     grid $recess.lf3.cb -row 3 -col 0 -sticky w -padx 4 -pady 4;
     grid $recess.lf3 -row 3 -col 1 -sticky e -padx 4 -pady 4;	
         
-	# Button frame
-	frame $recess.buttons;
-	grid $recess.buttons -row 4 -col 1 -sticky e -padx 4 -pady 4;
+    # Button frame
+    frame $recess.buttons;
+    grid $recess.buttons -row 4 -col 1 -sticky e -padx 4 -pady 4;
     
     
     button $recess.buttons.outputs -font [ hwt::AppFont b ] \
                                        -text "outputs" -width 10 \
                                        -command "::test_aaa::put_test";
-	grid $recess.buttons.outputs  -row 5 -col 1 -sticky e -padx 4 -pady 4;
+    grid $recess.buttons.outputs  -row 5 -col 1 -sticky e -padx 4 -pady 4;
     
-	hwt::KeepOnTop win
+    hwt::KeepOnTop win
  
 
 }  
