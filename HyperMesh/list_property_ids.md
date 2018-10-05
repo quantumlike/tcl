@@ -1,4 +1,4 @@
-### list selected properties and write to a txt file
+### list selected properties and write to a txt file in HM v2017
 
 ```tcl
 *clearmark property 1
