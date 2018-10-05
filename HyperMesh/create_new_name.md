@@ -1,5 +1,5 @@
 
-### Create new entity name
+### Create new entity name for HM v2017
 
 ```tcl
 proc create_new_name {name} {
