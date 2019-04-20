@@ -112,5 +112,5 @@ a has all the results of the command, i.e. the whole string.    \
 b is the return value of the first founded patten for (.*), it is the founded value, i.e. "abcdefghigklmnopqrstuvwxyz".   \
 c for (.2), i.e. 12.   \
 d for (.*) before (.8), i.e. 3456.   \
-So on and so forth.   \
+So on and so forth.   
 
