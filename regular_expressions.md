@@ -71,16 +71,16 @@ Explanations:
 ```tcl
 regexp {.*(.2).*(.8).*(.\^).*} $z a b c d e
 ```
-The above command is a regular expression, ".*(.2).*(.8).*(.\^).*".The regular expression patten mapping means to find a mapping between the string and the 'whole' expression {.*(.2).*(.8).*(.\^).*}. So each patten should have some mapped value, and according to the patten, the mapping is unique.
-There are three pattens have return value: ".2", ".8", ".^". The quoted patten has return value. 
-The return value of the command regexp is 1, if all the pattens are found. Otherwise the return is 0.
-The target is to get the number 2 and the charactor before it, get the number 8 and the charactor before it, and get the charactor ^ and the charactor before it.
-The a b c d e are five variables which store the output of the command "regexp". 
-a has all the results of the command, i.e. the whole string. 
-b is the return value of the first founded patten for (.2) before ".*", it is the founded value before ".*", i.e. 12.
-c for (.8) before ".*", i.e. 78.
-d for (.\^), i.e. %^.
-e has no patten to store. So it is empty.
+The above command is a regular expression, ".*(.2).*(.8).*(.\^).*".The regular expression patten mapping means to find a mapping between the string and the 'whole' expression {.*(.2).*(.8).*(.\^).*}. So each patten should have some mapped value, and according to the patten, the mapping is unique.   \
+There are three pattens have return value: ".2", ".8", ".^". The quoted patten has return value.    \
+The return value of the command regexp is 1, if all the pattens are found. Otherwise the return is 0.   \
+The target is to get the number 2 and the charactor before it, get the number 8 and the charactor before it, and get the charactor ^ and the charactor before it.   \
+The a b c d e are five variables which store the output of the command "regexp".    \
+a has all the results of the command, i.e. the whole string.    \
+b is the return value of the first founded patten for (.2) before ".*", it is the founded value before ".*", i.e. 12.   \
+c for (.8) before ".*", i.e. 78.   \
+d for (.\^), i.e. %^.   \
+e has no patten to store. So it is empty.   
 
 ```tcl
 % regexp {(.*)(.2)(.*)(.8)(.*)(.\^)(.*)} $z a b c d e f g h i
@@ -104,13 +104,13 @@ abcdefghigklmnopqrstuvwxyz
 % puts $i
 
 ```
-The above command is a regular expression, "(.*)(.2)(.*)(.8)(.*)(.\^)(.*)". There are seven pattens have return value. Each pair of quotes is a patten which has return value. 
-The return value of the command regexp is 1, if all the pattens are found. Otherwise the return is 0.
-The target is to get the number 2 and the charactor before it, get the number 8 and the charactor before it, and get the charactor ^ and the charactor before it.
-The a b c d e are five variables which store the output of the command "regexp". 
-a has all the results of the command, i.e. the whole string. 
-b is the return value of the first founded patten for (.*), it is the founded value, i.e. "abcdefghigklmnopqrstuvwxyz".
-c for (.2), i.e. 12.
-d for (.*) before (.8), i.e. 3456.
-So on and so forth.
+The above command is a regular expression, "(.*)(.2)(.*)(.8)(.*)(.\^)(.*)". There are seven pattens have return value. Each pair of quotes is a patten which has return value.    \
+The return value of the command regexp is 1, if all the pattens are found. Otherwise the return is 0.   \
+The target is to get the number 2 and the charactor before it, get the number 8 and the charactor before it, and get the charactor ^ and the charactor before it.   \
+The a b c d e are five variables which store the output of the command "regexp".    \
+a has all the results of the command, i.e. the whole string.    \
+b is the return value of the first founded patten for (.*), it is the founded value, i.e. "abcdefghigklmnopqrstuvwxyz".   \
+c for (.2), i.e. 12.   \
+d for (.*) before (.8), i.e. 3456.   \
+So on and so forth.   \
 
