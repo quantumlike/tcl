@@ -151,5 +151,10 @@ IndexError: no such group
 >>> m.groups()
 ('2', '8', '^')
 >>>
+>>> m.group(1)+m.group(3)+m.group(2)
+'2^8'
+>>> y = m.group(1)+m.group(3)+m.group(2)
+>>> y
+'2^8'
 ```
    
