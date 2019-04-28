@@ -114,3 +114,41 @@ c for (.2), i.e. 12.   \
 d for (.*) before (.8), i.e. 3456.   \
 So on and so forth.   
 
+
+2019.4.28:
+Python methods:
+'''python
+import re
+p = re.compile('.*(2).*(8).*(^).*')
+m = p.match('abcd1234567890@#$%^&')
+m.groups()
+m.group(0)
+m.group(1)
+m.group(2)
+m.group(3)
+m.group(4)
+'''
+
+'''python
+Python 3.5.3 (v3.5.3:1880cb95a742, Jan 16 2017, 15:51:26) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import re
+>>> p = re.compile('.*(2).*(8).*(\^).*')
+>>> m=p.match('abcd1234567890@#$%^&')
+>>> m.group()
+'abcd1234567890@#$%^&'
+>>> m.group(1)
+'2'
+>>> m.group(2)
+'8'
+>>> m.group(3)
+'^'
+>>> m.group(4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: no such group
+>>> m.groups()
+('2', '8', '^')
+>>>
+'''
+   
