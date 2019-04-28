@@ -1,4 +1,6 @@
-### Examples and explanations for Regular expressions
+### Examples and explanations for Regular expressions --- tcl & python
+
+#### tcl 
 
 Examples:
 
@@ -8,7 +10,7 @@ regexp {.*(2).*(8).*(\^).*} $z a b c d e;
 set y "$b$d$c";
 ```
 
-the output is:
+the command window output is:
 ```
 % set z "abcdefghigklmnopqrstuvwxyz1234567890~@#$%^&*";
 abcdefghigklmnopqrstuvwxyz1234567890~@#$%^&*
@@ -114,6 +116,7 @@ c for (.2), i.e. 12.   \
 d for (.*) before (.8), i.e. 3456.   \
 So on and so forth.   
 
+#### python
 
 2019.4.28:
 Python methods:
@@ -129,7 +132,7 @@ m.group(2)
 m.group(3)
 m.group(4)
 ```
-
+the command window output is:
 ```python
 Python 3.5.3 (v3.5.3:1880cb95a742, Jan 16 2017, 15:51:26) [MSC v.1900 32 bit (Intel)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
